@@ -48,13 +48,13 @@
     }
 
     .cms-page-add-button {
-      border-color: #c0c0c2;
+      border-color: $border-light-grey;
       span.btn-icon-add {
         height: 17px;
       }
       span.ui-button-text {
-        color: #393939;
-        text-shadow: #fff 0 1px 1px;
+        color: $color-dark-grey;
+        text-shadow: $color-white 0 1px 1px;
       }
     }
   }

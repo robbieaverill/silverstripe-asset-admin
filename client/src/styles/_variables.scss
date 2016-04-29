@@ -4,31 +4,42 @@
 //
 
 $state-active:    #29abe2 !default;
-$error:       #d30000 !default;
-$color-text:    #66727d !default;
+$error:           #d30000 !default;
+$color-text:      #66727d !default;
+$color-white:     #ffffff !default;
+$color-dark-grey: #393939 !default;
 
 
 // Body
 //
 // Settings for the `<body>` element.
 
-$body-color:     #4f5861 !default;    // eg. Text, labels, iconography
-$body-color-light:     lighten($body-color, 10%); // eg. Field descriptions
-$body-color-lighter:   lighten($body-color, 20%); // eg. placeholder text
+$body-color:         #4f5861 !default;    // eg. Text, labels, iconography
+$body-color-light:   lighten($body-color, 10%); // eg. Field descriptions
+$body-color-lighter: lighten($body-color, 20%); // eg. placeholder text
 $body-color-dark:    darken($body-color, 10%);  // eg. iconography hovered
 
-$body-bg:      #f6f7f8 !default;
-$body-bg-dark:     darken($body-bg, 2%);  // eg. North bar
-$menu-bg:      #e9f0f4 !default;
-$menu-link-active:     darken($menu-bg, 5%);
+$body-bg-light:      #ddd;   // e.g. File upload progress background
+
+$body-bg:            #f6f7f8 !default;
+$body-bg-dark:       darken($body-bg, 2%);  // eg. North bar
+$menu-bg:            #e9f0f4 !default;
+$menu-link-active:   darken($menu-bg, 5%);
 $menu-icon-color:    darken($menu-bg, 32%);
 
 // borders colors
-$border-light:     darken($body-bg, 6%);
-$border-base:    darken($body-bg, 10%);
-$border-dark:    darken($body-bg, 14%);
-$border-darker:    darken($body-bg, 20%);
+$border-light:       darken($body-bg, 6%);
+$border-base:        darken($body-bg, 10%);
+$border-dark:        darken($body-bg, 14%);
+$border-darker:      darken($body-bg, 20%);
+$border-light-grey:  #c0c0c2 !default; // E.g. Asset Admin CMS page add button background
 
+// Shadows and effect colours
+//
+$shadow-light:                rgba(0, 0, 0, 0.2);
+$background-light-grey:       rgba(236, 239, 241, 0.9);
+$body-color-dark-transparent: rgba($body-color-dark, 0.5);
+$body-color-blue:             #338dc1 !default; // E.g. load more button in Gallery
 
 // Links
 //
@@ -41,15 +52,15 @@ $link-color:     #0073c1 !default;
 //
 
 $font-size-root:     12px !default;
-$line-height:    1.5 !default;
+$line-height:        1.5 !default;
 
 
 // Components
 //
 
-$border-radius:    .25rem !default;   // 4px
-$border-radius-lg:     .375rem !default;  // 6px
-$border-radius-sm:     .125rem !default;  // 2px
+$border-radius:        0.25rem !default;   // 4px
+$border-radius-lg:     0.375rem !default;  // 6px
+$border-radius-sm:     0.125rem !default;  // 2px
 $card-border-color:    $border-base;
 
 
@@ -70,12 +81,12 @@ $gallery-folder-title-height: $gallery-folder-height - 2;
 // Transition speeds
 //
 
-$transition-speed-slow:   1s;
-$transition-speed-mid:  .5s;
-$transition-speed-fast:   .3s;
+$transition-speed-slow: 1s;
+$transition-speed-mid:  0.5s;
+$transition-speed-fast: 0.3s;
 
 // Paths
 //
 
 $root-path:      "../..";
-$framework-path:     "../../../framework";
+$framework-path: "../../../framework";

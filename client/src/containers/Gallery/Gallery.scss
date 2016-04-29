@@ -25,7 +25,7 @@
       margin-top: -1px;
 
       &:focus {
-        box-shadow: 0 0 3px 0 rgba(0, 0, 0, .2);
+        box-shadow: 0 0 3px 0 $shadow-light;
       }
 
       > span {
@@ -33,14 +33,14 @@
         color: inherit;
 
         &::before {
-          content: "Sort by "
+          content: "Sort by ";
         }
       }
     }
 
     .chzn-drop {
       border-radius: 3px;
-      box-shadow: 0 0 3px rgba(0, 0, 0, .2);
+      box-shadow: 0 0 3px $shadow-light;
       border: 0;
     }
 
@@ -68,14 +68,14 @@
 
   .gallery__load__more {
     display: block;
-    color: #fffff;
+    color: $color-white;
     cursor: pointer;
     margin: 8px auto 24px;
     padding: 4px;
     width: 200px;
     font-size: 16px;
     height: 44px;
-    background-color: #338dc1;
+    background-color: $body-color-blue;
     border: 0;
     border-radius: 4px;
   }

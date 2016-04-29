@@ -5,7 +5,7 @@
   }
 
   .item--overlay {
-    background: rgba(darken($body-color, 10%), .5);
+    background: $body-color-dark-transparent;
     position: absolute;
     top: 0;
     right: 0;
@@ -14,7 +14,7 @@
     display: none;
     transition-property: opacity, background;
     transition-duration: $transition-speed-mid;
-    color: #ffffff;
+    color: $color-white;
     border-radius: $border-radius-sm $border-radius-sm 0 0;
     height: $gallery-thumb-height;
     width: 100%;
@@ -31,7 +31,7 @@
     position: relative;
     float: left;
     margin: 0 20px 20px 0;
-    background-color: #fff;
+    background-color: $color-white;
     border: 1px solid;
     border-color: $border-light $border-base $border-dark;
     width: $gallery-item-width;
@@ -40,7 +40,7 @@
     height: $gallery-item-height;
 
     &:hover {
-      box-shadow: 0 1px 4px #dddddd;
+      box-shadow: 0 1px 4px $body-bg-light;
       cursor: pointer;
     }
 
@@ -93,31 +93,31 @@
 
     &--archive {
       .item__thumbnail {
-        background: #fff url(../images/icon_zip.png) center center no-repeat;
+        background: $color-white url("../images/icon_zip.png") center center no-repeat;
       }
     }
 
     &--audio {
       .item__thumbnail {
-        background: #fff url(../images/icon_audio.png) center center no-repeat;
+        background: $color-white url("../images/icon_audio.png") center center no-repeat;
       }
     }
 
     &--video {
       .item__thumbnail {
-        background: #fff url(../images/icon_video.png) center center no-repeat;
+        background: $color-white url("../images/icon_video.png") center center no-repeat;
       }
     }
 
     &--document {
       .item__thumbnail {
-        background: #fff url(../images/icon_doc.png) center center no-repeat;
+        background: $color-white url("../images/icon_doc.png") center center no-repeat;
       }
     }
 
     &--false {
       .item__thumbnail {
-        background: #fff url(../images/icon_file.png) center center no-repeat;
+        background: $color-white url("../images/icon_file.png") center center no-repeat;
       }
     }
 
@@ -126,7 +126,7 @@
 
       .item__actions__action--select {
         border-color: $state-active;
-        color: #fff;
+        color: $color-white;
         opacity: 1;
 
         &::before {
@@ -167,7 +167,7 @@
     background: none;
 
     &::before {
-      background-color: #fff;
+      background-color: $color-white;
       font-size: 14px;
       padding: 1px;
     }
@@ -182,7 +182,7 @@
       }
 
       &::before {
-        border: 1px solid #ddd;
+        border: 1px solid $body-bg-light;
         border-radius: $border-radius-sm;
       }
     }
@@ -208,14 +208,13 @@
     top: calc(50% - 40px);
     left: 50%;
     transform: translateX(-50%) translateY(50%);
-    background: #ddd;
+    background: $body-bg-light;
     border-radius: 10px;
     overflow: hidden;
 
     &__bar {
       height: 100%;
       background: $state-active;
-      background: #29abe2;
       width: 0%;
     }
   }
@@ -238,7 +237,7 @@
     left: 50%;
     transform: translateX(-50%) translateY(50%);
     width: 75%;
-    color: #fff;
+    color: $color-white;
     text-align: center;
   }
 }
